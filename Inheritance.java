@@ -1,3 +1,6 @@
+
+import bank.Account;
+
 class Shape {
 //    String color;
     public void area() {
@@ -16,6 +19,12 @@ class  EquilateralTriangle extends Triangle {
         System.out.println((0.5)*b*h);
     }
 }
+
+class Circle extends Shape {
+    public void area(int r) {
+        System.out.println((3.14)*r*r);
+    }  
+}
 // class Circle extends Shape {
 //    public void area(int r) {
 //        System.out.println((3.14)*r*r);
@@ -25,8 +34,13 @@ class  EquilateralTriangle extends Triangle {
 
 public class Inheritance {
     public static void main(String args[]){
-        Triangle t1 = new Triangle();
-        t1.color = "Red";
-        System.out.println(t1.color);
+        // Triangle t1 = new Triangle();
+        // t1.color = "Red";
+        // System.out.println(t1.color);
+
+       bank.Account acc1 = new bank.Account();
+       acc1.name = "Alice";
+         System.out.println(acc1.name);
     }
+
 }
